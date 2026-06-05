@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Aditya Agro Print Ind Ltd – Premium rotogravure printed rolls for oil pouches, milk pouches, and FMCG packaging. ISO 9001:2025 certified." />
+  <title>Aditya Agro Print Ind Ltd | Premium Flexible Packaging Rolls</title>
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Space+Grotesk:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* ---------- RESET & GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111111;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary: #A90091;
+      --primary-dark: #770064;
+      --primary-light: #FFF1FD;
+      --white: #ffffff;
+      --black: #111111;
+      --gray: #666666;
+      --border: #F3D6EF;
+      --footer-bg: #0a0412;
+      --footer-text: #e5d9e8;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 20px 35px rgba(169, 0, 145, 0.12);
+      --transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      --whatsapp-green: #25D366;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .container1 {
+      width: 100%;
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    /* skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary);
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      z-index: 1000;
+      font-weight: 600;
+      border-radius: 0 0 8px 0;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* ========== WHATSAPP BUTTON ========== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 1000;
+      background-color: var(--whatsapp-green);
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #20b859;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* ========== NAVBAR ========== */
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(169, 0, 145, 0.12);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-wrapper {
+      height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .logo-img {
+      height: 110px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .logo-text {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      font-family: "Playfair Display", serif;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links a,
+    .nav-links .nav-link-btn {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1e1e2a;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: 0.25s;
+      padding: 0.5rem 0;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+    }
+
+    .nav-links a::after,
+    .nav-links .nav-link-btn::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2.5px;
+      background: var(--primary);
+      transition: 0.3s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links .nav-link-btn:hover::after,
+    .nav-links a.active::after,
+    .nav-links .nav-link-btn.active::after {
+      width: 100%;
+    }
+
+    .nav-links a.active,
+    .nav-links .nav-link-btn.active {
+      color: var(--primary);
+    }
+
+    .nav-btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.7rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      box-shadow: 0 8px 20px rgba(169, 0, 145, 0.2);
+      white-space: nowrap;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .nav-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(169, 0, 145, 0.3);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      color: var(--primary);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav-wrapper {
+        height: 80px;
+      }
+
+      .logo-img {
+        height: 55px;
+      }
+
+      .logo-text {
+        font-size: 1rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1.5rem;
+        gap: 1.2rem;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid var(--border);
+        z-index: 998;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links a::after {
+        display: none;
+      }
+    }
+
+    /* ========== PAGE SYSTEM ========== */
+    .page {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .page.active-page {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      width: 100%;
+      height: 108vh;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0;
+    }
+
+    .slides {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: 1.2s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(45, 0, 40, 0.65));
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 90%;
+      max-width: 950px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-tag {
+      font-size: 0.85rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: #FFDAF5;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 5rem;
+      line-height: 1.08;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title span {
+      color: #FFC7F6;
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 2rem;
+      color: #f5f5f5;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 1rem 2.2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      transition: var(--transition);
+      cursor: pointer;
+      font-size: 1rem;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      border: 1.5px solid white;
+      color: white;
+      background: transparent;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: var(--primary);
+      border-color: white;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      z-index: 10;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    @media (max-width: 750px) {
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .hero-desc {
+        font-size: 1rem;
+      }
+    }
+
+    /* ========== GENERAL SECTION ========== */
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.2rem;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.7;
+      font-size: 1.2rem;
+      color: #5a5a6e;
+      margin-bottom: 3.8rem;
+    }
+
+    /* Clients */
+    .client-logos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .client-logo-item {
+      background: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      color: var(--primary);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .client-logo-item:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 20px rgba(169, 0, 145, 0.1);
+    }
+
+    /* Stats */
+    .stats-section {
+      background: var(--primary-light);
+      border-radius: 60px;
+      margin: 2rem auto;
+      padding: 3rem 2rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--primary);
+      font-family: 'Space Grotesk', monospace;
+    }
+
+    .stat-label {
+      font-weight: 500;
+      color: #444;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Specifications */
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .spec-card {
+      background: white;
+      border-radius: 40px;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .spec-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+    }
+
+    .spec-card h3 {
+      font-size: 1.7rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .spec-list {
+      list-style: none;
+    }
+
+    .spec-list li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #eee;
+      padding: 0.7rem 0;
+      font-weight: 500;
+    }
+
+    /* Design services */
+    .design-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .design-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.6rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .design-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .design-card h4 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+    }
+
+    /* Process */
+    .process-timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+
+    .process-step {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: white;
+      border-radius: 32px;
+      margin: 0.75rem;
+      transition: var(--transition);
+      border: 1px solid var(--border);
+    }
+
+    .process-step:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .step-number {
+      background: var(--primary);
+      color: white;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .connector {
+      font-size: 2rem;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 300;
+    }
+
+    @media (max-width: 680px) {
+      .connector {
+        display: none;
+      }
+
+      .process-timeline {
+        flex-direction: column;
+      }
+
+      .section-title {
+        font-size: 2.2rem;
+      }
+
+      .spec-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Machinery */
+    .machinery-quality {
+      background: var(--primary-light);
+      border-radius: 50px;
+      margin: 2rem 0;
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 40px;
+      padding: 2.2rem;
+      border: 1px solid var(--border);
+      height: 100%;
+      transition: var(--transition);
+    }
+
+    .info-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .info-card h3 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .machinery-list,
+    .feature-list {
+      list-style: none;
+    }
+
+    .machinery-list li,
+    .feature-list li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .machinery-list li::before {
+      content: "⚙️";
+      position: absolute;
+      left: -0.2rem;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .quality-badge {
+      background: var(--primary-light);
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    /* Support & others */
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.2rem;
+      margin-top: 2rem;
+    }
+
+    .support-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 32px;
+      border: 1px solid var(--border);
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .support-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .support-card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    /* About page */
+    .about-page-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 40px;
+      object-fit: cover;
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-content h3 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1.2rem;
+    }
+
+    .about-content p {
+      line-height: 1.8;
+      color: #4a4a5a;
+      margin-bottom: 1rem;
+    }
+
+    /* Product grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 32px;
+      overflow: hidden;
+      transition: var(--transition);
+      border: 1px solid var(--border);
+    }
+
+    .product-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 28px 50px rgba(169, 0, 145, 0.18);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 1.5rem;
+    }
+
+    .product-content h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .roll-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 50px;
+      margin-bottom: 0.6rem;
+    }
+
+    /* Media gallery - Enhanced with clickable images */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .media-card {
+      background: white;
+      border-radius: 32px;
+      overflow: hidden;
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid var(--border);
+    }
+
+    .media-card:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-md);
+    }
+
+    .media-card img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .media-content {
+      padding: 1.5rem;
+    }
+
+    .media-content h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Lightbox Overlay with Navigation Arrows */
+    .lightbox-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(12px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.25s, opacity 0.3s ease;
+    }
+
+    .lightbox-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .lightbox-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .lightbox-img {
+      max-width: 85vw;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 16px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      color: white;
+      font-size: 3rem;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-family: monospace;
+      user-select: none;
+      z-index: 2002;
+    }
+
+    .lightbox-nav:hover {
+      background: var(--primary);
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 0 18px rgba(169, 0, 145, 0.6);
+    }
+
+    .nav-prev {
+      left: 30px;
+    }
+
+    .nav-next {
+      right: 30px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 25px;
+      right: 35px;
+      font-size: 2.5rem;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+      z-index: 2001;
+      backdrop-filter: blur(4px);
+      font-family: monospace;
+    }
+
+    .lightbox-close:hover {
+      background: var(--primary);
+      transform: scale(1.05);
+    }
+
+    .lightbox-caption {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      font-size: 1.1rem;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 0.8rem 1.8rem;
+      border-radius: 60px;
+      backdrop-filter: blur(8px);
+      white-space: nowrap;
+      max-width: 90%;
+      overflow-x: auto;
+      font-weight: 500;
+      pointer-events: none;
+      z-index: 2001;
+    }
+
+    @media (max-width: 768px) {
+      .lightbox-nav {
+        width: 45px;
+        height: 45px;
+        font-size: 2rem;
+      }
+      .nav-prev { left: 10px; }
+      .nav-next { right: 10px; }
+      .lightbox-close { top: 15px; right: 15px; width: 40px; height: 40px; font-size: 1.8rem; }
+      .lightbox-img { max-width: 90vw; max-height: 70vh; }
+      .lightbox-caption { font-size: 0.85rem; padding: 0.5rem 1rem; white-space: normal; }
+    }
+
+    /* Contact */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+      margin-bottom: 3rem;
+      font-size: large;
+    }
+
+    .contact-info h3 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.8rem;
+      line-height: 1.8;
+      font-size: 1.3rem;
+      color: #4a4a5a;
+    }
+
+    .contact-form {
+      background: var(--primary-light);
+      padding: 2rem;
+      border-radius: 38px;
+      border: 1px solid var(--border);
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.9rem;
+      border-radius: 24px;
+      border: 1px solid #e2cce0;
+      outline: none;
+      font-family: 'Inter', sans-serif;
+      transition: 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(169, 0, 145, 0.1);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 50px;
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .submit-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .map-container {
+      margin-top: 2rem;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 380px;
+      border: 0;
+      border-radius: 20px;
+    }
+
+    /* Footer */
+    .enhanced-footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      padding: 4rem 0 2rem;
+      border-top: 4px solid var(--primary);
+      margin-top: 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      font-size: larger;
+    }
+
+    .footer-brand .logo-footer {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-brand p {
+      line-height: 1.5;
+      opacity: 0.85;
+    }
+
+    .footer-links h4,
+    .footer-support h4,
+    .footer-social h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+      color: white;
+      position: relative;
+      display: inline-block;
+    }
+
+    .footer-links h4::after,
+    .footer-support h4::after,
+    .footer-social h4::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 35px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    .footer-links button,
+    .footer-support button {
+      background: none;
+      border: none;
+      display: block;
+      color: #cdc2da;
+      margin-bottom: 0.75rem;
+      transition: 0.2s;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .footer-links button:hover,
+    .footer-support button:hover {
+      color: var(--primary);
+      transform: translateX(5px);
+    }
+
+    .footer-social p {
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      background: rgba(255, 255, 255, 0.08);
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.25s;
+      font-size: 1.1rem;
+    }
+
+    .social-icons a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 1.8rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.8rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .two-col-grid,
+      .about-page-grid,
+      .contact-wrapper,
+      .product-grid,
+      .media-grid,
+      .support-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 0 1.25rem;
+      }
+      .stats-section {
+        padding: 2rem 1rem;
+      }
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .btn-primary,
+      .btn-secondary {
+        padding: 0.7rem 1.5rem;
+      }
+      .stat-number {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="https://wa.me/918437677830?text=Hello%20Aditya%20Agro%20Print%2C%20I%27m%20interested%20in%20your%20premium%20printed%20rolls.%20Please%20share%20more%20details."
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">💬</a>
+
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo-wrapper" id="homeLogoBtn">
+        <img class="logo-img" src="images/logo.jpeg" alt="Aditya Agro Print Logo" onerror="this.src='https://placehold.co/90x90?text=AAPI'">
+        <span class="logo-text">ADITYA AGRO PRINT <br> IND</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#" data-page="home" class="nav-link-btn">Home</a>
+        <a href="#" data-page="about" class="nav-link-btn">About Us</a>
+        <a href="#" data-page="products" class="nav-link-btn">Products</a>
+        <a href="#" data-page="media" class="nav-link-btn">Media</a>
+        <a href="#" data-page="contact" class="nav-link-btn">Contact</a>
+      </div>
+      <a href="#" data-page="contact" class="nav-btn" id="contactNavBtn">Get Quote</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page active-page">
+      <section class="hero">
+        <div class="slides">
+          <div class="slide active" style="background-image:url('images/home.png');"></div>
+          <div class="slide" style="background-image:url('images/home1.png');"></div>
+          <div class="slide" style="background-image:url('images/home2.png');"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-tag">Printed Rolls • Rotogravure Excellence</div>
+          <h1 class="hero-title">Premium <span>Printed Rolls</span><br> For Oil & Milk Pouches</h1>
+          <p class="hero-desc">Aditya Agro Print delivers high-performance rotogravure printed rolls for edible oils, dairy, and FMCG brands. Ready-to-use rolls for your pouch filling machines.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary" data-page-nav="products">Explore Roll Products</button>
+            <button class="btn-secondary" data-page-nav="contact">Request Roll Quote</button>
+          </div>
+        </div>
+        <div class="hero-scroll" data-page-nav="process-section">Scroll ↓</div>
+      </section>
+
+      <section class="container">
+        <h2 class="section-title">Trusted By Leading Brands</h2>
+        <p class="section-desc">Over 500+ brands rely on our premium printed rolls for their packaging needs.</p>
+        <div class="client-logos-grid">
+          <div class="client-logo-item">🌻 SunGold Oil</div>
+          <div class="client-logo-item">🥛 Fresh Milk Dairy</div>
+          <div class="client-logo-item">🌾 Shakti Edible Oils</div>
+          <div class="client-logo-item">🍬 SweetCo Confectionery</div>
+          <div class="client-logo-item">🐄 Amulya Dairy</div>
+        </div>
+      </section>
+
+      <section class="container1 stats-section">
+        <div class="stats-grid">
+          <div><div class="stat-number">15+</div><div class="stat-label">Years Experience</div></div>
+          <div><div class="stat-number">500+</div><div class="stat-label">Happy Clients</div></div>
+          <div><div class="stat-number">50M+</div><div class="stat-label">Rolls Produced</div></div>
+          <div><div class="stat-number">24/7</div><div class="stat-label">Customer Support</div></div>
+        </div>
+      </section>
+
+      <section class="container1">
+        <h2 class="section-title">Product Specifications</h2>
+        <p class="section-desc">Technical details for our most demanded printed rolls</p>
+        <div class="spec-grid">
+          <div class="spec-card"><h3>🥜 Oil Pouch Rolls</h3><ul class="spec-list"><li><span>Material:</span><span>PET / PE / Metallized</span></li><li><span>Thickness:</span><span>70–120 Micron</span></li><li><span>Printing:</span><span>Up to 10 Colors</span></li><li><span>Width:</span><span>Custom (200mm–1200mm)</span></li><li><span>MOQ:</span><span>500 kg</span></li></ul></div>
+          <div class="spec-card"><h3>🥛 Milk Pouch Rolls</h3><ul class="spec-list"><li><span>Material:</span><span>LDPE / LLDPE / Co-extruded</span></li><li><span>Thickness:</span><span>50–90 Micron</span></li><li><span>Printing:</span><span>6–8 Colors Gravure</span></li><li><span>Width:</span><span>Custom</span></li><li><span>Seal Strength:</span><span>High integrity</span></li></ul></div>
+        </div>
+      </section>
+
+      <section style="background: #fef9ff; margin-top: 1rem; border-radius: 60px;">
+        <div class="container"><h2 class="section-title">🎨 Packaging Design Services</h2><p class="section-desc">From concept to cylinder – complete creative support for your brand</p>
+        <div class="design-services-grid"><div class="design-card"><h4>📐 Logo Design</h4><p>Professional brand identity & logo creation</p></div><div class="design-card"><h4>🛍️ Pouch Design</h4><p>Eye-catching structure & graphics for pouches</p></div><div class="design-card"><h4>🏷️ Label Design</h4><p>High-resolution roll-fed label artworks</p></div><div class="design-card"><h4>✨ Brand Identity</h4><p>Complete packaging guidelines</p></div><div class="design-card"><h4>🖼️ Mockup Design</h4><p>3D realistic pouch mockups</p></div><div class="design-card"><h4>⚙️ Cylinder Design</h4><p>Pre-press & rotogravure cylinder artwork</p></div></div></div>
+      </section>
+
+      <section id="process-section" class="process container1"><h2 class="section-title">From Design to Printed Rolls</h2><p class="section-desc">Every roll we produce goes through a meticulous 6-step journey for zero-defect output.</p>
+        <div class="process-timeline"><div class="process-step"><div class="step-number">1</div><h3>🎨 Artwork & Design</h3><p>Custom structural & creative roll design.</p></div><div class="connector">→</div><div class="process-step"><div class="step-number">2</div><h3>🖨️ Cylinder Engraving</h3><p>Precision rotogravure cylinder engraving.</p></div><div class="connector">→</div><div class="process-step"><div class="step-number">3</div><h3>📀 Gravure Printing</h3><p>High-speed 10-color printing on rolls.</p></div><div class="connector">→</div><div class="process-step"><div class="step-number">4</div><h3>📦 Lamination & Slitting</h3><p>Multilayer lamination & exact roll slitting.</p></div><div class="connector">→</div><div class="process-step"><div class="step-number">5</div><h3>✨ Quality Inspection</h3><p>100% camera inspection of printed rolls.</p></div><div class="connector">→</div><div class="process-step"><div class="step-number">6</div><h3>🚚 Roll Dispatch</h3><p>Finished printed rolls delivered to your factory.</p></div></div>
+      </section>
+
+      <section class="machinery-quality"><div class="container"><h2 class="section-title">Precision Engineering & Quality</h2><p class="section-desc">World-class machinery and uncompromised quality standards for superior flexible packaging rolls.</p>
+        <div class="two-col-grid"><div class="info-card"><h3>🏭 Advanced Machinery</h3><ul class="machinery-list"><li>🇩🇪 10-Color Rotogravure Printing Lines</li><li>⚡ High-Speed Lamination Machines for Rolls</li><li>📏 Automatic Slitting & Rewinding Systems</li><li>🖨️ Inline 100% Camera Inspection for Rolls</li><li>🧪 Lab Testing: Barrier, Seal Strength, COF</li><li>♻️ Eco-friendly solvent recovery & sustainable inks</li></ul></div>
+        <div class="info-card"><h3>🎯 Roll Quality Promise</h3><div class="quality-badge">ISO 9001:2025 • BRC • FSSC 22000</div><ul class="feature-list"><li><strong>Custom Artwork Studio</strong> – In-house graphic design team</li><li><strong>High-Definition Gravure</strong> – Up to 300 lines/inch resolution</li><li><strong>Barrier Expertise</strong> – EVOH, Metallized, Alufoil laminates</li><li><strong>Roll Formats</strong> – Various widths, core sizes, and lengths</li><li><strong>Material Versatility</strong> – PET, BOPP, PE, PLA, kraft papers</li><li><strong>Quality Assurance</strong> – Migration testing, heat seal profiling</li></ul><p>✨ 100% defect-free printed rolls with zero compromise</p></div></div></div>
+      </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about-page" class="page">
+      <div class="container" style="padding-top: 140px;"><h2 class="section-title">About Us</h2><p class="section-desc">Crafting high-performance printed packaging rolls for modern brands since 2010.</p>
+        <div class="about-page-grid"><div class="about-image"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="Manufacturing Team" loading="lazy"></div>
+        <div class="about-content"><h3>Premium Printed Rolls Manufacturer</h3><p>Aditya Agro Print Ind Ltd specializes in advanced flexible packaging rolls, premium rotogravure printing for edible oil pouches, dairy packaging rolls, and multilayer laminates delivered as rolls.</p><p>Our packaging rolls combine visual shelf impact with technical durability, helping brands improve customer trust and filling efficiency.</p><p>With state-of-the-art infrastructure and dedicated R&D, we ensure each printed roll meets international quality standards for your pouch machines. We are ISO 9001:2025 certified and committed to sustainable manufacturing practices.</p><p>📍 Head Office: M.No.2205, Ward No.02, Bamnoli, Sangli, Tal. Miraj, Dist. Sangli</p><p>📞 +91 8437677830</p></div></div></div>
+    </div>
+
+    <!-- PRODUCTS PAGE -->
+    <div id="products-page" class="page">
+      <div class="container" style="padding-top: 140px;"><h2 class="section-title">Our Printed Roll Products</h2><p class="section-desc">High-quality engineered printed rolls for oil pouch, milk pouch, and FMCG packaging.</p>
+        <div class="product-grid"><div class="product-card"><img src="images/oil8.jpeg" alt="Oil Pouch Rolls"><div class="product-content"><div class="roll-badge">Printed Rolls</div><h3>Oil Pouch Rolls</h3><p>High-barrier rotogravure printed rolls for edible oil packaging.</p></div></div>
+        <div class="product-card"><img src="images/milk1.jpeg" alt="Milk Pouch Rolls"><div class="product-content"><div class="roll-badge">Printed Rolls</div><h3>Milk Pouch Rolls</h3><p>Hygienic dairy laminate rolls with superior seal strength.</p></div></div>
+        <div class="product-card"><img src="images/amrakhand.jpeg" alt="Stand-Up Pouch Rolls"><div class="product-content"><div class="roll-badge">Printed Rolls</div><h3>Stand-Up Pouch Rolls</h3><p>Premium ready-to-fill stand-up pouch film rolls for premium brands.</p></div></div>
+        <div class="product-card"><img src="images/basundi.jpeg" alt="Custom Rolls"><div class="product-content"><div class="roll-badge">Custom Rolls</div><h3>Custom Printed Rolls</h3><p>High-resolution rotogravure rolls with vibrant finishing. Any size, any laminate.</p></div></div></div>
+        <div style="margin-top: 4rem;"><h2 class="section-title" style="font-size:2rem;">Supports for Roll Buyers</h2><div class="support-grid"><div class="support-card"><h3>📦 Roll Consultation</h3><p>Expert guidance on roll materials, barrier systems & filling compatibility.</p></div><div class="support-card"><h3>⚙️ Technical Assistance</h3><p>Production optimization, seal performance & pouch machine integration support.</p></div><div class="support-card"><h3>🤝 Customer Support</h3><p>24/7 dedicated team for urgent roll requirements and repeat orders.</p></div></div></div>
+      </div>
+    </div>
+
+    <!-- MEDIA PAGE - Enhanced with Lightbox & Navigation Arrows -->
+    <div id="media-page" class="page">
+      <div class="container" style="padding-top: 140px;">
+        <h2 class="section-title">Media & Gallery</h2>
+        <p class="section-desc">Click on any image to view full screen. Use arrows to browse through our collection.</p>
+        <div class="media-grid" id="mediaGalleryGrid">
+          <div class="media-card" data-src="images/amrakhand.jpeg" data-caption="Roll Printing Innovation - Advanced rotogravure systems for high-speed roll production">
+            <img src="images/amrakhand.jpeg" alt="Roll Printing" loading="lazy">
+            <div class="media-content"><h3>Roll Printing Innovation</h3><p>Advanced rotogravure systems for high-speed roll production.</p></div>
+          </div>
+          <div class="media-card" data-src="images/basundi.jpeg" data-caption="Creative Roll Design - Visual branding for pouches that stands out on shelves">
+            <img src="images/basundi.jpeg" alt="Design Studio" loading="lazy">
+            <div class="media-content"><h3>Creative Roll Design</h3><p>Visual branding for pouches that stands out on shelves.</p></div>
+          </div>
+          <div class="media-card" data-src="images/oil3.jpeg" data-caption="Modern Roll Manufacturing - Precision-driven consistent quality across every roll">
+            <img src="images/oil3.jpeg" alt="Manufacturing" loading="lazy">
+            <div class="media-content"><h3>Modern Roll Manufacturing</h3><p>Precision-driven consistent quality across every roll.</p></div>
+          </div>
+          <div class="media-card" data-src="images/home.png" data-caption="State-of-the-art Production Facility with 10 color gravure lines">
+            <img src="images/home.png" alt="Production Facility" loading="lazy">
+            <div class="media-content"><h3>Production Excellence</h3><p>High-speed rotogravure lines with 10 color capacity.</p></div>
+          </div>
+          <div class="media-card" data-src="images/home1.png" data-caption="Quality Assurance Lab - 100% camera inspection and barrier testing">
+            <img src="images/home1.png" alt="Quality Lab" loading="lazy">
+            <div class="media-content"><h3>Quality Assurance</h3><p>100% camera inspection and barrier testing.</p></div>
+          </div>
+          <div class="media-card" data-src="images/home2.png" data-caption="Eco-friendly Manufacturing - Solvent recovery & sustainable inks">
+            <img src="images/home2.png" alt="Eco Manufacturing" loading="lazy">
+            <div class="media-content"><h3>Sustainable Practices</h3><p>Solvent recovery & water-based inks.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact-page" class="page">
+      <div class="container" style="padding-top: 140px;"><h2 class="section-title">Request Roll Quote</h2><p class="section-desc">Tell us your roll requirements and we'll deliver premium printed rolls.</p>
+        <div class="contact-wrapper"><div class="contact-info"><h3>Get In Touch</h3><p>📍 M.No.2205, Ward No.02, Bamnoli, Sangli, Tal. Miraj, Dist. Sangli</p><p>📧 adityaagroprintind55@gmail.com</p><p>📞 +91 8437677830</p><p>Premium Printed Rolls • Rotogravure Printing • Roll to Roll Solutions</p><p>🌟 ISO 9001:2025 Certified | 15+ Years Excellence</p></div>
+        <form class="contact-form" id="contactForm"><div class="form-group"><label>Your Name</label><input type="text" id="nameInput" placeholder="Enter your name"></div><div class="form-group"><label>Email Address</label><input type="email" id="emailInput" placeholder="Enter your email"></div><div class="form-group"><label>Your Roll Requirements</label><textarea rows="4" id="msgInput" placeholder="Tell us about your roll requirements: size, material, quantity, number of colors, etc."></textarea></div><button class="submit-btn" type="submit">Send Roll Enquiry</button><p id="formFeedback" style="font-size:0.8rem; margin-top:0.8rem; text-align:center;"></p></form></div>
+        <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3817.9475289819425!2d74.62080007515344!3d16.87848998392453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDUyJzQyLjYiTiA3NMKwMzcnMjQuMiJF!5e0!3m2!1sen!2sin!4v1779615607888!5m2!1sen!2sin" loading="lazy" title="Location map"></iframe></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="enhanced-footer">
+    <div class="container"><div class="footer-grid"><div class="footer-brand"><div class="logo-footer">ADITYA AGRO PRINT</div><p>Redefining flexible packaging rolls with rotogravure precision since 2010.</p></div>
+      <div class="footer-links"><h4>Quick Links</h4><button data-page="home">Home</button><button data-page="about">About Us</button><button data-page="products">Roll Products</button><button data-page="media">Media</button></div>
+      <div class="footer-support"><h4>Support</h4><button data-page="products">Roll Help</button><button data-page="contact">Request Roll Quote</button></div>
+      <div class="footer-social"><h4>Connect</h4><p>📞 +91 8437677830</p><p>📧 adityaagroprintind55@gmail.com</p><div class="social-icons"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="WhatsApp">W</a></div></div></div>
+      <div class="copyright">© 2026 Aditya Agro Print Ind Ltd • All Rights Reserved • Printed Rolls for Oil & Milk Pouches</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Overlay with Navigation Arrows -->
+  <div id="lightboxOverlay" class="lightbox-overlay">
+    <div class="lightbox-container">
+      <div class="lightbox-nav nav-prev" id="lightboxPrevBtn" aria-label="Previous image">❮</div>
+      <div class="lightbox-nav nav-next" id="lightboxNextBtn" aria-label="Next image">❯</div>
+      <button class="lightbox-close" id="lightboxCloseBtn" aria-label="Close fullscreen view">✕</button>
+      <img class="lightbox-img" id="lightboxImage" src="" alt="Full size view">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Page navigation
+      const pages = { home: document.getElementById('home-page'), about: document.getElementById('about-page'), products: document.getElementById('products-page'), media: document.getElementById('media-page'), contact: document.getElementById('contact-page') };
+      function showPage(pageId) { Object.keys(pages).forEach(id => pages[id].classList.remove('active-page')); if (pages[pageId]) pages[pageId].classList.add('active-page'); window.scrollTo({ top: 0, behavior: 'smooth' }); document.querySelectorAll('.nav-links a, .nav-links .nav-link-btn').forEach(btn => { const val = btn.getAttribute('data-page'); if (val === pageId) btn.classList.add('active'); else btn.classList.remove('active'); }); }
+      document.querySelectorAll('[data-page]').forEach(el => { el.addEventListener('click', (e) => { e.preventDefault(); const page = el.getAttribute('data-page'); if (page && pages[page]) showPage(page); }); });
+      document.querySelectorAll('[data-page-nav]').forEach(el => { el.addEventListener('click', () => { const page = el.getAttribute('data-page-nav'); if (page && pages[page]) showPage(page); else if (page === 'process-section') document.getElementById('process-section')?.scrollIntoView({ behavior: 'smooth' }); }); });
+      document.getElementById('homeLogoBtn')?.addEventListener('click', (e) => { e.preventDefault(); showPage('home'); });
+      document.getElementById('contactNavBtn')?.addEventListener('click', (e) => { e.preventDefault(); showPage('contact'); });
+      const toggle = document.getElementById('menuToggle'); const navLinksDiv = document.getElementById('navLinks');
+      if (toggle && navLinksDiv) { toggle.addEventListener('click', () => navLinksDiv.classList.toggle('active')); navLinksDiv.querySelectorAll('a, .nav-link-btn').forEach(btn => btn.addEventListener('click', () => navLinksDiv.classList.remove('active'))); }
+      window.addEventListener('scroll', () => document.querySelector('.navbar')?.classList.toggle('scrolled', window.scrollY > 50));
+      
+      // Hero slider
+      let sliderInterval; function startSlider() { const slides = document.querySelectorAll('#home-page .slide'); if (!slides.length) return; let current = 0; if (sliderInterval) clearInterval(sliderInterval); sliderInterval = setInterval(() => { if (!pages.home.classList.contains('active-page')) return; slides[current].classList.remove('active'); current = (current + 1) % slides.length; slides[current].classList.add('active'); }, 4500); }
+      const homeObserver = new MutationObserver((mutations) => { mutations.forEach(m => { if (m.attributeName === 'class' && pages.home.classList.contains('active-page')) startSlider(); }); }); homeObserver.observe(pages.home, { attributes: true }); if (pages.home.classList.contains('active-page')) startSlider();
+      
+      // Contact form
+      const form = document.getElementById('contactForm'); if (form) { form.addEventListener('submit', (e) => { e.preventDefault(); const name = document.getElementById('nameInput')?.value.trim(); const email = document.getElementById('emailInput')?.value.trim(); const msg = document.getElementById('msgInput')?.value.trim(); const feedback = document.getElementById('formFeedback'); if (!name || !email || !msg) { feedback.innerText = "❌ Please fill all fields with your roll requirements."; setTimeout(() => feedback.innerText = "", 2500); return; } if (!email.includes('@') || !email.includes('.')) { feedback.innerText = "⚠️ Enter valid email."; setTimeout(() => feedback.innerText = "", 2500); return; } feedback.innerText = "✅ Thank you! Our roll experts will reach out with quote soon."; feedback.style.color = "#006633"; form.reset(); setTimeout(() => feedback.innerText = "", 3500); }); }
+      
+      document.querySelectorAll(`[data-page="home"]`).forEach(el => el.classList.add('active'));
+
+      // LIGHTBOX FUNCTIONALITY WITH ARROWS
+      const mediaCards = Array.from(document.querySelectorAll('#media-page .media-card'));
+      const overlay = document.getElementById('lightboxOverlay');
+      const lightboxImg = document.getElementById('lightboxImage');
+      const captionEl = document.getElementById('lightboxCaption');
+      const closeBtn = document.getElementById('lightboxCloseBtn');
+      const prevBtn = document.getElementById('lightboxPrevBtn');
+      const nextBtn = document.getElementById('lightboxNextBtn');
+      
+      let galleryItems = [];
+      let currentIndex = 0;
+
+      function buildGallery() {
+        galleryItems = mediaCards.map(card => ({
+          src: card.getAttribute('data-src') || card.querySelector('img')?.getAttribute('src') || '',
+          caption: card.getAttribute('data-caption') || card.querySelector('h3')?.innerText || 'Media Gallery'
+        })).filter(item => item.src);
+      }
+
+      function openLightbox(index) {
+        if (!galleryItems.length) buildGallery();
+        if (galleryItems.length === 0) return;
+        if (index < 0) index = 0;
+        if (index >= galleryItems.length) index = galleryItems.length - 1;
+        currentIndex = index;
+        const item = galleryItems[currentIndex];
+        if (item && item.src) {
+          lightboxImg.src = item.src;
+          captionEl.innerText = item.caption;
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function showNext() { if (galleryItems.length) openLightbox((currentIndex + 1) % galleryItems.length); }
+      function showPrev() { if (galleryItems.length) openLightbox((currentIndex - 1 + galleryItems.length) % galleryItems.length); }
+
+      mediaCards.forEach((card, idx) => {
+        card.addEventListener('click', (e) => {
+          e.stopPropagation();
+          buildGallery();
+          const clickedSrc = card.getAttribute('data-src') || card.querySelector('img')?.getAttribute('src');
+          const foundIndex = galleryItems.findIndex(item => item.src === clickedSrc);
+          openLightbox(foundIndex !== -1 ? foundIndex : 0);
+        });
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+      if (nextBtn) nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+      if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+      if (overlay) overlay.addEventListener('click', (e) => { if (e.target === overlay || e.target.classList.contains('lightbox-container')) closeLightbox(); });
+      document.addEventListener('keydown', (e) => {
+        if (overlay && overlay.classList.contains('active')) {
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') showNext();
+          if (e.key === 'ArrowLeft') showPrev();
+        }
+      });
+      buildGallery();
+    })();
+  </script>
+</body>
+
+</html>
