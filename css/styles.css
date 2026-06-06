@@ -2483,12 +2483,21 @@ section {
     right: 20px;
   }
 
+    .hero-tag{
+    font-size: 0.8rem;
+  }
+
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
 
   .hero-desc {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.5rem 1rem;
   }
 
   .stats-grid {
